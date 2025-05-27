@@ -42,8 +42,6 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 ---
 
 ## 📁 Project Structure
-
-```text
 .
 ├── main.py                  # Main script to initialize, run and simulate the network
 ├── ryu_controller_basic.py # Custom Ryu controller used to control switch behavior
