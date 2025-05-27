@@ -12,7 +12,7 @@ Traditional network defense strategies, which follow a linear sequence of vulner
 *Keywords:* Cyberdefense, Moving Target Defense, Game Theory, 
 Logic Model, Cybersecurity.
 
-*Version:* March 15, 2025
+*Version:* May 27, 2025
 
 ### Code
 
