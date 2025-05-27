@@ -5,6 +5,19 @@ Supplementary Material to: A Game-Theoretic Approach for Optimal Multi-Target De
 ### Helena Rifà-Pous, Internet Interdisciplinary Institute (IN3) and Universitat Oberta de Catalunya (UOC)
 ### Joaquin Garcia-Alfaro, SAMOVAR, Institut Polytechnique de Paris, Telecom SudParis, 91120 Palaiseau, France
 
+````markdown
+This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying [scientific paper](#), and includes both attack simulation and network visualization.
+
+---
+
+## 🧠 Overview
+
+The system creates a dynamic SDN-based network composed of `m` hosts and `n` paths, using a custom controller that reacts to simulated attacks and switches paths accordingly. The behavior of the system is governed by a matrix `A`, which determines connectivity and attack dynamics as presented in our publication.
+
+---
+
+## 📄 Associated Paper
+
 ## Abstract
 
 Traditional network defense strategies, which follow a linear sequence of vulnerability discovery, defense selection, and attack mitigation, often struggle to adapt to emerging and unpredictable cyber threats. This paper introduces a novel strategic framework designed to optimize defense costs that addresses security concerns and cost-effectiveness. Drawing inspiration from Bayesian Stackelberg game theory, our approach introduces a novel resource management strategy. We test our approach over the programmable networking paradigm, which is already expected to expand traditional network architectures to ease the management of new properties, including the incorporation of new security functionality. We conduct experimental work assuming a representative setup over Software Defined Networking protocols. We show that our solution outperforms existing methods by reducing defense costs and offering defenders the flexibility to minimize the attack's impact or the overall cost. Our work establishes a foundation for developing advanced models with more detailed representations of system resources.
@@ -31,23 +44,6 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
   url={},
 }
 ```
-
-````markdown
-This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying [scientific paper](#), and includes both attack simulation and network visualization.
-
----
-
-## 🧠 Overview
-
-The system creates a dynamic SDN-based network composed of `m` hosts and `n` paths, using a custom controller that reacts to simulated attacks and switches paths accordingly. The behavior of the system is governed by a matrix `A`, which determines connectivity and attack dynamics as presented in our publication.
-
----
-
-## 📄 Associated Paper
-
-> 📘 *[Insert Paper Title Here]*  
-> *[Author Names], [Affiliation], [Conference/Journal Name]*  
-> [[DOI or arXiv link]](#)
 
 ---
 
