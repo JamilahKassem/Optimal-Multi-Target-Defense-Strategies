@@ -32,11 +32,6 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
 }
 ```
 
-## License
-
-This project is licensed under the MIT License.
-
-
 ````markdown
 # Path Switching Network Simulation with Ryu Controller
 
@@ -94,7 +89,7 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 
 4. **Traffic Monitoring**
 
-   * Traffic is monitored using `bwm-ng`, and stored in a temporary file (`tmp_flow.txt`).
+   * Traffic is monitored using `bwm-ng`, and stored in a temporary file (`tmp.txt`).
    * This file is later parsed and plotted using `plotter.py`.
 
 5. **Attack Simulation**
@@ -124,19 +119,6 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
    sudo python3 main.py
    ```
 
-3. **Visualize the Network**
-   After simulation:
-
-   ```bash
-   python3 visualize_network.py
-   ```
-
-4. **Plot Traffic Data**
-
-   ```bash
-   python3 plotter.py
-   ```
-
 ---
 
 ## 🛠 Requirements
@@ -162,40 +144,19 @@ pip install pyvis matplotlib networkx
 ## 📊 Output
 
 * `topology.html`: Network topology in interactive format
-* `traffic_plot.png` (or similar): Plotted network load
-* `tmp_flow.txt`: Intermediate data for bandwidth usage
-
----
-
-## 📜 License
-
-This code is released under the MIT License. See `LICENSE` for more details.
-
----
-
-## 📫 Citation
-
-If you use this code in your research, please cite the following paper:
-
-```
-@inproceedings{yourcitation2025,
-  title={Path Switching Networks Using SDN Under Attack Scenarios},
-  author={Your Name and Others},
-  booktitle={Conference Name},
-  year={2025}
-}
-```
+* `tmp.txt`: Intermediate data for bandwidth usage
 
 ---
 
 ## 📬 Contact
 
-For questions or collaborations, please reach out to \[[your-email@example.com](mailto:your-email@example.com)].
+For questions or collaborations, please reach out to \[[jahmadkassem@uoc.edu](mailto:jahmadkassem@uoc.edu)].
 
 ```
 
----
+## License
 
-Let me know if you’d like the paper citation filled in properly, or if you're targeting a specific conference like IEEE, ACM, etc. I can also help generate a `requirements.txt` or Docker setup if needed.
-```
+This project is licensed under the MIT License.
+
+
 
