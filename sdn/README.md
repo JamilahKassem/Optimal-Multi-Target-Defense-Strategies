@@ -30,18 +30,21 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
   doi={},
   url={},
 }
+```
+
+## Code
 
 This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying [scientific paper](#), and includes both attack simulation and network visualization.
 
 ---
 
-## 🧠 Overview
+### 🧠 Overview
 
 The system creates a dynamic SDN-based network composed of `m` hosts and `n` paths, using a custom controller that reacts to simulated attacks and switches paths accordingly. The behavior of the system is governed by a matrix `A`, which determines connectivity and attack dynamics as presented in our publication.
 
 ---
 
-## 📁 Project Structure
+### 📁 Project Structure
 .
 ├── main.py                  # Main script to initialize, run and simulate the network
 ├── ryu_controller_basic.py # Custom Ryu controller used to control switch behavior
@@ -52,7 +55,7 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 
 ---
 
-## ⚙️ System Description
+### ⚙️ System Description
 
 1. **Network Creation**
 
@@ -90,7 +93,7 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 
 ---
 
-## ▶️ How to Run
+### ▶️ How to Run
 
 1. **Start the Controller**
 
@@ -107,7 +110,7 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 
 ---
 
-## 🛠 Requirements
+### 🛠 Requirements
 
 * Python 3.x
 * [Ryu SDN Framework](https://osrg.github.io/ryu/)
@@ -143,20 +146,19 @@ pip install dnspython==2.2.1
 
 ---
 
-## 📊 Output
+### 📊 Output
 
 * `topology.html`: Network topology in interactive format
 * `tmp.txt`: Intermediate data for bandwidth usage
 
 ---
 
-## 📬 Contact
+### 📬 Contact
 
 For questions or collaborations, please reach out to \[[jahmadkassem@uoc.edu](mailto:jahmadkassem@uoc.edu)].
 
-```
 
-## License
+### License
 
 This project is licensed under the MIT License.
 
