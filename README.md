@@ -1,4 +1,4 @@
-Supplementary Material to: A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies against Emerging Cyberattacks
+Supplementary Material to: A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies in Programmable Networking
 ===
 
 ### Jamil Ahmad Kassem, Internet Interdisciplinary Institute (IN3) and Universitat Oberta de Catalunya (UOC)
