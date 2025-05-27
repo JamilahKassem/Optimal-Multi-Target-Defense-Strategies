@@ -35,3 +35,167 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
 ## License
 
 This project is licensed under the MIT License.
+
+
+````markdown
+# Path Switching Network Simulation with Ryu Controller
+
+This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying [scientific paper](#), and includes both attack simulation and network visualization.
+
+---
+
+## 🧠 Overview
+
+The system creates a dynamic SDN-based network composed of `m` hosts and `n` paths, using a custom controller that reacts to simulated attacks and switches paths accordingly. The behavior of the system is governed by a matrix `A`, which determines connectivity and attack dynamics as presented in our publication.
+
+---
+
+## 📄 Associated Paper
+
+> 📘 *[Insert Paper Title Here]*  
+> *[Author Names], [Affiliation], [Conference/Journal Name]*  
+> [[DOI or arXiv link]](#)
+
+---
+
+## 📁 Project Structure
+
+```text
+.
+├── main.py                  # Main script to initialize, run and simulate the network
+├── ryu_controller_basic.py # Custom Ryu controller used to control switch behavior
+├── visualize_network.py    # Generates an HTML visualization of the network topology
+├── plotter.py              # Plots network traffic after simulation
+├── tmp_flow.txt            # Temporary file used to store traffic logs (auto-generated)
+````
+
+---
+
+## ⚙️ System Description
+
+1. **Network Creation**
+
+   * The simulation starts by defining an `A` matrix as described in our paper.
+   * The matrix defines how hosts and switches are interconnected.
+   * One host is assigned as the attacker and another as the target.
+
+2. **Controller Operation**
+
+   * The Ryu controller reads link topology and installs flow rules.
+   * It is started using:
+
+     ```bash
+     sudo ryu-manager --observe-links ryu_controller_basic.py
+     ```
+
+3. **Visualization**
+
+   * The network is visualized using `visualize_network.py`, which uses `pyvis` to generate a standalone HTML file.
+
+4. **Traffic Monitoring**
+
+   * Traffic is monitored using `bwm-ng`, and stored in a temporary file (`tmp_flow.txt`).
+   * This file is later parsed and plotted using `plotter.py`.
+
+5. **Attack Simulation**
+
+   * A DDoS-style attack is simulated using `hping3` from the attacker to the target.
+   * Attack duration is 5 seconds, followed by 10 seconds of post-attack monitoring.
+
+6. **Shutdown**
+
+   * All monitoring and network components are gracefully stopped.
+   * Final traffic plots are generated.
+
+---
+
+## ▶️ How to Run
+
+1. **Start the Controller**
+
+   ```bash
+   sudo ryu-manager --observe-links ryu_controller_basic.py
+   ```
+
+2. **Run the Simulation**
+   In a new terminal:
+
+   ```bash
+   sudo python3 main.py
+   ```
+
+3. **Visualize the Network**
+   After simulation:
+
+   ```bash
+   python3 visualize_network.py
+   ```
+
+4. **Plot Traffic Data**
+
+   ```bash
+   python3 plotter.py
+   ```
+
+---
+
+## 🛠 Requirements
+
+* Python 3.x
+* [Ryu SDN Framework](https://osrg.github.io/ryu/)
+* `bwm-ng`, `hping3`
+* Python packages:
+
+  * `pyvis`
+  * `matplotlib`
+  * `networkx`
+
+Install dependencies (Ubuntu example):
+
+```bash
+sudo apt install bwm-ng hping3
+pip install pyvis matplotlib networkx
+```
+
+---
+
+## 📊 Output
+
+* `topology.html`: Network topology in interactive format
+* `traffic_plot.png` (or similar): Plotted network load
+* `tmp_flow.txt`: Intermediate data for bandwidth usage
+
+---
+
+## 📜 License
+
+This code is released under the MIT License. See `LICENSE` for more details.
+
+---
+
+## 📫 Citation
+
+If you use this code in your research, please cite the following paper:
+
+```
+@inproceedings{yourcitation2025,
+  title={Path Switching Networks Using SDN Under Attack Scenarios},
+  author={Your Name and Others},
+  booktitle={Conference Name},
+  year={2025}
+}
+```
+
+---
+
+## 📬 Contact
+
+For questions or collaborations, please reach out to \[[your-email@example.com](mailto:your-email@example.com)].
+
+```
+
+---
+
+Let me know if you’d like the paper citation filled in properly, or if you're targeting a specific conference like IEEE, ACM, etc. I can also help generate a `requirements.txt` or Docker setup if needed.
+```
+
