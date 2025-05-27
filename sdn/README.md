@@ -33,8 +33,6 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
 ```
 
 ````markdown
-# Path Switching Network Simulation with Ryu Controller
-
 This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying [scientific paper](#), and includes both attack simulation and network visualization.
 
 ---
