@@ -71,7 +71,7 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
 
 ```
 @inproceedings{kassem2025optimal,
-  title={{A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies against Emerging Cyberattacks}},
+  title={{A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies in Programmable Networking}},
   author={Kassem, Jamil Ahmad and Rifà-Pous, Helena and Garcia-Alfaro, Joaquin},
   booktitle={},
   pages={},
