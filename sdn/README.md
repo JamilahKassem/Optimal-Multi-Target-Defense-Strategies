@@ -85,7 +85,7 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 
 5. **Attack Simulation**
 
-   * A DDoS-style attack is simulated using `hping3` from the attacker to the target.
+   * A DoS-style attack is simulated using `hping3` from the attacker to the target.
    * Attack duration is 5 seconds, followed by 10 seconds of post-attack monitoring.
 
 6. **Shutdown**
