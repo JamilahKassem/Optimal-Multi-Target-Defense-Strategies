@@ -67,7 +67,7 @@ This command will execute the `compare_vary_n.m` script, perform the simulations
 
 If using this code for research purposes, please cite:
 
-J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies against Emerging Cyberattacks. *Under review*, 2025.
+J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies in Programmable Networking. *Under review*, 2025.
 
 ```
 @inproceedings{kassem2025optimal,
