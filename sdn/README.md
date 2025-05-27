@@ -34,7 +34,7 @@ J. A. Kassem, H. Rifà-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Opt
 
 ## Code
 
-This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying [scientific paper](#), and includes both attack simulation and network visualization.
+This repository contains the source code and tools for simulating a **path-switching network** governed by a custom **Ryu SDN controller**. The system is designed based on a matrix formulation described in our accompanying scientific paper, and includes both attack simulation and network visualization.
 
 ---
 
@@ -45,6 +45,8 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 ---
 
 ### 📁 Project Structure
+
+````
 .
 ├── main.py                  # Main script to initialize, run and simulate the network
 ├── ryu_controller_basic.py # Custom Ryu controller used to control switch behavior
