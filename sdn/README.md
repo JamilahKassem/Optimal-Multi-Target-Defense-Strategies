@@ -123,8 +123,24 @@ The system creates a dynamic SDN-based network composed of `m` hosts and `n` pat
 Install dependencies (Ubuntu example):
 
 ```bash
-sudo apt install bwm-ng hping3
-pip install pyvis matplotlib networkx
+git clone https://github.com/mininet/mininet
+cd mininet
+git tag
+git checkout -b mininet-2.3.0 2.3.0
+cd ..
+mininet/util/install.sh -a
+python3 -m pip install --upgrade --extra-index-url https://PySimpleGUI.net/install PySimpleGUI
+sudo apt update
+sudo apt install bwm-ng
+
+sudo apt-get install python3-eventlet python3-routes python3-webob python3-paramiko python3-dev
+sudo pip install ryu==4.34
+pip uninstall eventlet
+sudo pip uninstall eventlet
+pip install eventlet==0.31.1 --user
+pip uninstall dnspython
+sudo pip uninstall dnspython
+pip install dnspython==2.2.1
 ```
 
 ---
