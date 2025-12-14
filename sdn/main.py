@@ -7,7 +7,7 @@ from mininet.cli import CLI
 from mininet.log import setLogLevel
 from mininet.node import RemoteController
 
-from plotter import gui
+from plotter import gu
 from calculate_alpha import calculate_alpha
 from visualize_network import visualize_net
 
