@@ -3,7 +3,7 @@ import numpy as np
 class ParentNode:
     def __init__(self):
         self.nodes = []
-
+s
     def add_node(self, node):
         self.nodes.append(node)
 
@@ -74,4 +74,5 @@ def calculate_alpha(R, m, n):
             i = i + 1
             if R[i] < criticality_for_node:
                 i = i - 1
+
     return alpha, ParentNodes, ChildResources
