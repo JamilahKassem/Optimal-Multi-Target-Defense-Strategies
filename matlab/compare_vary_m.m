@@ -8,26 +8,40 @@ Values=2:25;
 Cost_base=zeros(size(Values,1));
 Cost_kassem=zeros(size(Values,1));
 Cost_new=zeros(size(Values,1));
+font_size = 22;
+font_size_2 = 20;
 
 C=1;
 for m=Values
     Cost_base(C) = base_model( cm,n,m );
     [~,Cost_kassem(C)]  = kassem_model( cm,n,m );
     [~,~,Cost_new(C)]  = new_model( cm,n,m );
+    % Cost_base(C) = Cost_base(C) / m;
+    % Cost_kassem(C) = Cost_kassem(C) / m;
+    % Cost_new(C) = Cost_new(C) / m;
     C=C+1;
 end
 h=figure;
 plot(Values,Cost_base,'--','color','red');
 hold on;
 plot(Values,Cost_new,'color','blue');
-plot(Values,Cost_kassem,'color','black');
+plot(Values,Cost_kassem,':','color','black');
+grid on;
 
+Px=4;Py=3;mx=0;my=0;
 hold off;
-xlabel('Number of resources m');
-ylabel('Defense Cost');
-set(h,'papersize',[5 4]);
-set(h, 'PaperPosition', [-0.5 0 5 4]);
-legend('Base model','Proposed model','Kassem model','Position',[0.37 0.7 0.1 0.2]);
-fontsize(16,"points");
+xlabel('Number of resources m','FontSize',font_size);
+ylabel('Defense Cost','FontSize',font_size);
+xlim([2 inf]);
+xticks([2, 5, 10, 15, 20, 25]);
+set(0, 'DefaultAxesFontSize', font_size_2);
+set(h,'papersize',[Px Py]);
+set(h, 'PaperPosition', [mx my Px Py]);
+% lgd = legend('Base model','Proposed model','unoptimized model','Position',[0.46 0.65 0.1 0.2],'FontSize',font_size);
+% set(lgd,'Box','off');
+% lgd.Color = 'none';
+% lgd.EdgeColor = 'none';
+% legend('Baseline model','Proposed model','Position',[0.32 0.7 0.1 0.2],'FontSize',font_size);
 ylim([0 inf]);
-print(h,['compare_m_n_',num2str(n),'_cm_',num2str(cm),'.svg'],'-dsvg');
+print(h,['compare_m_n_',num2str(n),'_cm_',num2str(cm),'.pdf'],'-dpdf');
+% print(h,['compare_m_n_per_resource_',num2str(n),'_cm_',num2str(cm),'.pdf'],'-dpdf');
