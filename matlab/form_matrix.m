@@ -20,4 +20,3 @@ function [matrix] = form_matrix(m,n)
         end
     end
 end
-

@@ -11,4 +11,3 @@ function [Nm] = NumberofMoves(m,n)
         end
     end
 end
-

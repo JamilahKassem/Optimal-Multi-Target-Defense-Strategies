@@ -40,3 +40,4 @@ set(h,'papersize',[5 4]);
 set(h, 'PaperPosition', [-0.5 0 5 4]);
 fontsize(16,"points");
 print(h,'cost_with_defense_variation','-dpdf');
+

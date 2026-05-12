@@ -15,3 +15,4 @@ function [S,Nm,C] = new_model( cm,n,m )
         S=2;
     end
 end
+

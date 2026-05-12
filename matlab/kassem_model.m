@@ -8,3 +8,4 @@ function [Nm,C] = kassem_model( cm,n,m )
         C = m/n + Nm * cm * m_mod_n * ceil(m/n) * (1 - m/(n * ceil(m/n)))^2;
     end
 end
+
