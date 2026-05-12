@@ -12,9 +12,31 @@ Traditional network defense strategies, which follow a linear sequence of vulner
 
 *Keywords:* Cyberdefense, Programmable Network, Software Defined Networking, Moving Target Defense, Game Theory.
 
-*Version:* May 27, 2025
+*Version:* May 12, 2026
 
 
 ## License
 
 This project is licensed under the MIT License.
+
+## References
+
+If using this code for research purposes, please cite:
+
+J. Ahmad-Kassem, H. Rifa-Pous, J. Garcia-Alfaro. A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies in Programmable Networking, 23rd International Conference on Security and Cryptography (SECRYPT 2026), Porto, Portugal, 16-18 July 2026. 
+
+```
+@inproceedings{kassem2026secrypt,
+  title={{A Game-Theoretic Approach for Optimal Multi-Target Defense Strategies in Programmable Networking}},
+  author={Ahmad-Kassem, Jamil and Rifa-Pous, Helena and Garcia-Alfaro, Joaquin},
+  booktitle={Proceedings of the 23rd International Conference on Security and Cryptography (Secrypt 2026), Porto, Portugal},
+  isbn={},
+  issn={},
+  pages={},
+  month={July},
+  year={2026},
+  doi = {},
+  url = {},
+}
+```
+
