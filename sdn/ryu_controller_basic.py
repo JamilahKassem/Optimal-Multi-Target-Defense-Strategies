@@ -349,3 +349,4 @@ class ProjectController(app_manager.RyuApp):
             del self.adjacency[s2.dpid][s1.dpid]
         except KeyError:
             pass
+

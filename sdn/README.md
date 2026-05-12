@@ -11,7 +11,7 @@ Traditional network defense strategies, which follow a linear sequence of vulner
 
 *Keywords:* Cyberdefense, Programmable Network, Software Defined Networking, Moving Target Defense, Game Theory.
 
-*Version:* May 27, 2025
+*Version:* May 12, 2026
 
 ## Code
 

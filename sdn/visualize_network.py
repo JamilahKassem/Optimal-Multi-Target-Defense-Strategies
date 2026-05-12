@@ -49,3 +49,4 @@ def visualize_net(data,n):
     # Save back
     with open("topology.html", "w") as file:
         file.write(html)
+
