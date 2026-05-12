@@ -4,6 +4,7 @@ n=7;
 % n=5;
 cm=1/4;
 
+
 Values=2:25;
 Cost_base=zeros(size(Values,1));
 Cost_kassem=zeros(size(Values,1));
